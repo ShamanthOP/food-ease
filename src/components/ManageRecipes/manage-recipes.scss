@@ -1,0 +1,98 @@
+@import '../../styles/base/settings';
+
+.recipe-manager_card-list {
+    margin-top: $sizing-4;
+    margin-left: $sizing-4;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.recipe-link {
+    text-decoration: none;
+    color: black;
+}
+
+#manage-recipes-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#manage-recipes-title {
+    height: $sizing-10;
+    border-bottom: 1px solid $sgrey-1;
+    background-color: $grey-1;
+    width: 100%;
+    display: flex;
+}
+
+#manage-recipes-title-text {
+    flex-grow: 2;
+    font-size: $type-sizing-6;
+    font-weight: 100;
+    color: $sgrey-8;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#manage-recipes-add-recipe {
+    transition: 0.2s;
+    text-decoration: none;
+    color: $grey-9;
+    font-weight: 500;
+    font-size: $type-sizing-6;
+    margin-right: $sizing-8;
+}
+
+#manage-recipes-add-recipe:hover {
+    color: $primary-8;
+    font-size: $type-sizing-7
+}
+
+#manage-recipes-add-recipe-container {
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#recipe-manager-loading {
+    width: $sizing-10;
+    height: $sizing-10;
+}
+
+#recipe-manager-add-recipe-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#recipe-manager-no-recipes {
+    margin-top: $sizing-10;
+    font-weight: 200;
+}
+#recipe-manager-add-recipe {
+    transition: 0.4s;
+    padding: $sizing-3;
+    font-size: $type-sizing-4;
+    text-decoration: none;
+    color: $grey-9;
+    border-radius: $sizing-3;
+    font-weight: 100;
+}
+
+#recipe-manager-add-recipe:hover {
+    color: $grey-9;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);;
+}
